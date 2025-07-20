@@ -38,8 +38,8 @@ const Home = () => {
 const Product = ({title,day}) => {
   return(
     <div className="flex justify-between ">
-      <div className="flex gap-2">
-        <input  type="checkbox"/>
+      <div className="flex gap-2 items-center">
+        <input className='w-5 h-5 appearance-none border-1 border-green-800 rounded-full checked:bg-green-600 checked:border-0' type="checkbox"/>
         <p>{title}</p>
       </div>
       <div className="">
@@ -55,7 +55,7 @@ const Product = ({title,day}) => {
           <Navbar/>
           <div className="flex-col">
             <SeachSystem/>
-            <div className="grid grid-cols-3 p-3 gap-5">
+            <div className="grid grid-cols-3 md:grid-cols-3 p-3 gap-5">
               <div className=""> {/*calendar*/}
                 <MiniCalendar/>
               </div> 
