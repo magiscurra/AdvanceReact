@@ -4,7 +4,7 @@ import { BellRing, CircleCheckBig, LayoutDashboard, LogOut, SlidersHorizontal } 
 const Navbar = () => {
   return (
     <div className='p-3 '>
-      <div className="flex flex-col justify-start bg-white py-3 rounded-3xl shadow-2xl min-w-xs">
+      <div className="flex flex-col justify-start bg-white py-3 gap-197 rounded-3xl shadow-2xl  min-w-xs">
         <div className="">
           <div className="flex top-1 gap-4 ml-5 items-center">
             <p className='px-3 py-1 rounded-full bg-green-400'>T</p>
@@ -23,7 +23,7 @@ const Navbar = () => {
               <p>Notiications</p>
           </div>
         </div>
-        <div className="bottom-1 mt-86">
+        <div className="mt-auto">
           <div className="flex gap-4 items-center py-2 px-7 hover:bg-green-100 cursor-pointer">
               <SlidersHorizontal />
               <p>Settings</p>
