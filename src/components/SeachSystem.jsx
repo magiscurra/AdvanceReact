@@ -4,7 +4,7 @@ import React from 'react'
 const SeachSystem = () => {
   return (
     <div className='p-3'>
-      <div className="flex justify-between  gap-234 rounded-2xl bg-white shadow-2xl p-3 items-center">
+      <div className="flex justify-between rounded-2xl bg-white shadow-2xl p-3 items-center">
         <div className="">
             <input className='bg-gray-200 px-5 py-1 rounded-lg' type="search" name="Search" id="Search" placeholder='Search' />
         </div>

@@ -1,36 +1,50 @@
 import React from 'react'
-import { BellRing, CircleCheckBig, LayoutDashboard, LogOut, SlidersHorizontal } from 'lucide-react';
+import {
+  BellRing,
+  CircleCheckBig,
+  LayoutDashboard,
+  LogOut,
+  SlidersHorizontal
+} from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <div className='p-3 '>
-      <div className="flex flex-col justify-start bg-white py-3 gap-197 rounded-3xl shadow-2xl  min-w-xs">
-        <div className="">
-          <div className="flex top-1 gap-4 ml-5 items-center">
-            <p className='px-3 py-1 rounded-full bg-green-400'>T</p>
-            <p className='text-lg'>Task-Manager</p>
+    <div className="p-3 w-full md:w-64 lg:w-72 xl:w-80 2xl:w-96">
+      <div className="flex flex-col justify-between bg-white py-3 rounded-3xl shadow-2xl w-70 h-screen">
+        
+        <div>
+          <div className="flex gap-4 ml-5 items-center">
+            <p className="px-3 py-1 rounded-full bg-green-400 text-white font-bold text-sm md:text-base lg:text-lg">
+              T
+            </p>
+            <p className="text-base md:text-lg lg:text-xl">Task-Manager</p>
           </div>
-          <div className="flex gap-4 items-center py-2 px-7 shadow-2xs mt-5 hover:bg-green-100 cursor-pointer">
-              <LayoutDashboard />
-              <p>Dashboard</p>
+
+          <div className="flex gap-4 items-center py-2 px-7 mt-5 hover:bg-green-100 cursor-pointer">
+            <LayoutDashboard className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="text-sm md:text-base">Dashboard</p>
           </div>
-          <div className="flex gap-4 items-center py-2 px-7 shadow-2xs hover:bg-green-100 cursor-pointer">
-              <CircleCheckBig />
-              <p>My tasks</p>
+
+          <div className="flex gap-4 items-center py-2 px-7 hover:bg-green-100 cursor-pointer">
+            <CircleCheckBig className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="text-sm md:text-base">My tasks</p>
           </div>
-          <div className="flex gap-4 items-center py-2 px-7 shadow-2xs hover:bg-green-100 cursor-pointer">
-              <BellRing />
-              <p>Notiications</p>
+
+          <div className="flex gap-4 items-center py-2 px-7 hover:bg-green-100 cursor-pointer">
+            <BellRing className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="text-sm md:text-base">Notifications</p>
           </div>
         </div>
+
         <div className="mt-auto">
           <div className="flex gap-4 items-center py-2 px-7 hover:bg-green-100 cursor-pointer">
-              <SlidersHorizontal />
-              <p>Settings</p>
+            <SlidersHorizontal className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="text-sm md:text-base">Settings</p>
           </div>
+
           <div className="flex gap-4 items-center py-2 px-7 hover:bg-green-100 cursor-pointer">
-              <LogOut />
-              <p>Log out</p>
+            <LogOut className="w-5 h-5 md:w-6 md:h-6" />
+            <p className="text-sm md:text-base">Log out</p>
           </div>
         </div>
       </div>
