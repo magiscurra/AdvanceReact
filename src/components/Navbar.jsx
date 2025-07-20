@@ -10,7 +10,7 @@ import {
 const Navbar = () => {
   return (
     <div className="p-3 w-auto">
-      <div className="flex flex-col justify-between bg-white py-3 rounded-3xl shadow-2xl w-70 h-screen">
+      <div className="flex flex-col justify-between bg-white py-3 rounded-3xl shadow-2xl w-2xs h-screen">
         
         <div>
           <div className="flex gap-4 ml-5 items-center">
