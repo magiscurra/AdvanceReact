@@ -9,7 +9,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="p-3 w-full md:w-64 lg:w-72 xl:w-80 2xl:w-96">
+    <div className="p-3 w-auto">
       <div className="flex flex-col justify-between bg-white py-3 rounded-3xl shadow-2xl w-70 h-screen">
         
         <div>
